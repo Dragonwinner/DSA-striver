@@ -37,11 +37,11 @@ else
     commit_message="$1"
 fi
 
-# Check if there are any changes to commit
-if git diff --quiet && git diff --cached --quiet; then
-    print_warning "No changes to commit."
-    exit 0
-fi
+# # Check if there are any changes to commit
+# if git diff --quiet && git diff --cached --quiet; then
+#     print_warning "No changes to commit."
+#     exit 0
+# fi
 
 print_status "Adding all changes..."
 git add .
